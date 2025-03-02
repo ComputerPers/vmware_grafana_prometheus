@@ -8,6 +8,7 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 - Telegraf 1.0 or newer 
 - Prometheus / Victoriametrics 1.90
 - Grafana 11 or newer
+- DNS
 - Docker [optional]
 
 
@@ -24,8 +25,35 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 
 ## Telegraf
 
-## Victoriametrics
+- configure [Telegraf Input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/vsphere/README.md) 
+```
+[[inputs.vsphere]]
+  ## List of vCenter URLs to be monitored. These three lines must be uncommented
+  ## and edited for the plugin to work.
+  vcenters = [ "https://vcenter.local/sdk" ]
+  username = "readonly@corp.local"
+  password = "secret"
 
+```
+- Add Prometheus output section to your telegraf.conf
+```
+  [[outputs.prometheus_client]]
+  listen = ":9273"
+```
+- Add your Telegraf agent name to DNS
+
+## Victoriametrics / Prometheus
+
+- Setup target for prometheus agents:
+```
+- targets:
+  - 'telegraf-vcenter.local.domain:9273'
+
+  labels:
+    job: vcenters
+```
+
+  
 ## Grafana
 
 
