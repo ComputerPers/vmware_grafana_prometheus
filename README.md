@@ -35,7 +35,7 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
   password = "secret"
 
 ```
-- Add Prometheus output section to your telegraf.conf
+- Add [Prometheus output](https://github.com/influxdata/telegraf/blob/master/plugins/outputs/prometheus_client/README.md) section to your telegraf.conf
 ```
   [[outputs.prometheus_client]]
   listen = ":9273"
@@ -55,7 +55,8 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 
   
 ## Grafana
-
+- Add your Victoriametrics as [Prometheus datasource](https://docs.victoriametrics.com/#grafana-setup)
+- Import Dashboards from this repository
 
 
 Repository for the VMware, Grafana, Telegraf an InfluxDB integration - https://github.com/jorgedlcruz/vmware-grafana
