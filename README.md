@@ -10,7 +10,7 @@ A simple way to retrieve vCenter information and integrate it with Victoriametri
 - Grafana 11 or newer
 
 
-# A сouple of grafana dashboards.
+# A сouple of Grafana dashboards.
 ## Hosts
 
 ![image](https://github.com/user-attachments/assets/55861345-307a-4c88-87bd-33dbfd946ad8)
