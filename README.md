@@ -26,12 +26,13 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 - configure [Telegraf Input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/vsphere/README.md) 
 ```
 [[inputs.vsphere]]
-  ## List of vCenter URLs to be monitored. These three lines must be uncommented
-  ## and edited for the plugin to work.
-  vcenters = [ "https://vcenter.local/sdk" ]
-  username = "readonly@corp.local"
+  interval = "60s"
+  vcenters = [ "https://someaddress/sdk" ]
+  username = "readonly@vsphere.local"
   password = "secret"
 
+  insecure_skip_verify = true
+  force_discover_on_init = true
 ```
 - Add [Prometheus output](https://github.com/influxdata/telegraf/blob/master/plugins/outputs/prometheus_client/README.md) section to your telegraf.conf
 ```
