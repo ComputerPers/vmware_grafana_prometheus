@@ -19,6 +19,9 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 # Configuration
 ## vCenter
 
+- Create ReadOnly user
+- Configure [config.vpxd.stats.maxQueryMetrics](https://knowledge.broadcom.com/external/article?legacyId=2107096)
+
 ## Telegraf
 
 ## Victoriametrics
