@@ -1,15 +1,13 @@
 # Monitoring vSphere using Grafana and Telegraf, Victoriametrics/Prometheus
 A way to retrieve vCenter information and integrate it with Victoriametrics, to present it later with Grafana
 
-
-
-### Requirements:
-- vCenter 6.5 or newer
-- Telegraf 1.0 or newer 
-- Prometheus / Victoriametrics 1.90
-- Grafana 11 or newer
-- DNS
-- Docker [optional]
+> [!IMPORTANT]
+> ### Requirements:
+> - vCenter 6.5 or newer
+> - Telegraf 1.0 or newer 
+> - Prometheus / Victoriametrics 1.90
+> - Grafana 11 or newer
+> - DNS
 
 
 # A сouple of Grafana dashboards.
