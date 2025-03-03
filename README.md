@@ -39,7 +39,8 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
   [[outputs.prometheus_client]]
   listen = ":9273"
 ```
-- Add your Telegraf agent name to DNS
+- Add your Telegraf agent name to DNS (example: telegraf-vcenter.local.domain)
+- Check metrics - http://telegraf-vcenter.local.domain:9273/metrics
 
 ## Victoriametrics / Prometheus
 
