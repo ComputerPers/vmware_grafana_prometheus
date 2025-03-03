@@ -19,6 +19,11 @@ A way to retrieve vCenter information and integrate it with Victoriametrics, to 
 
 ![image](https://github.com/user-attachments/assets/5a47f047-7e17-403a-8b55-633bf931f164)
 
+![2025-03-03_13-02-14](https://github.com/user-attachments/assets/0d426cb6-89b8-4840-8b91-80d87fc656b8)
+
+![image](https://github.com/user-attachments/assets/2a9df9da-a926-4b97-b93f-cbbbd5d913fe)
+
+
 # Configuration
 ## vCenter
 
